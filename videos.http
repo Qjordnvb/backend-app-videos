@@ -1,0 +1,27 @@
+@api = http://localhost:8000
+
+GET {{api}}/videos
+###
+GET {{api}}/videos/60132b95a72424214420258a
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+  "url": "https://www.youtube.com/watch?v=KDT2BKv69L8&ab_channel=PlanetaJuan",
+  "title": "Planeta Juan",
+  "description": "¿Que esta pasando?"
+}
+###
+DELETE {{api}}/videos/60132b95a72424214420258a
+###
+PUT {{api}}/videos/60132b95a72424214420258a
+Content-Type: application/json
+
+{
+"description": "¿Que esta pasando en Canada?"
+
+}
+
+
+
